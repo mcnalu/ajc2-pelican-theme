@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 120%;
+  //background:#e0dfe5 url('/theme/img/body_bg.png') repeat-x;
+  
+  //Following from http://www.colorzilla.com/gradient-editor/#02cdb4+0,94e9c2+33,02cdb4+100;Custom
+  background: #02cdb4; /* Old browsers */
+  background: -moz-linear-gradient(top, #02cdb4 0%, #94e9c2 33%, #02cdb4 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02cdb4), color-stop(33%,#94e9c2), color-stop(100%,#02cdb4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #02cdb4 0%,#94e9c2 33%,#02cdb4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #02cdb4 0%,#94e9c2 33%,#02cdb4 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #02cdb4 0%,#94e9c2 33%,#02cdb4 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #02cdb4 0%,#94e9c2 33%,#02cdb4 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02cdb4', endColorstr='#02cdb4',GradientType=0 ); /* IE6-9 */
+
+  color: #111;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 1em;
+  min-width: 400px;
+  max-width: 800px;
+  border: thin solid gray;
+  border-radius: 5px;
+  display: block;
+}
+
+#main-container {
+  background-color: white;
+  padding: 1em;
+  min-height: 800px;
+}
+
+#banner {
+  width: 75%;
+  color: rgb(50, 187, 152);
+  font-size: 2em;
+  text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 8px;
+  background: #e0ffff;
+  padding-bottom: 0.1em;
+}
+
+a:link    { color: rgb(50, 187, 152); text-decoration: none;      }
+a:hover   { color: rgb(20, 137, 122); text-decoration: none; }
+a:visited { color: rgb(80, 217, 182); }
+
+h1 a { color: inherit !important }
+h2 { color: inherit !important }
+h3 a { color: inherit !important }
+h4 a { color: inherit !important }
+h5 a { color: inherit !important }
+h6 a { color: inherit !important }
+
+/* Headings */
+h1 {font-size: 1.4em}	
+h2 {font-size: 1.2em}
+h3 {font-size: 1.1em}
+h4 {font-size: 1.05em}
+h5 {font-size: 1em}
+h6 {font-size: 1em}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	line-height: 1.1;
+	margin-bottom: .1em;
+	margin-top: .1em;
+}
+
+nav {
+  width: 75%;
+  background: #dddddd;
+  margin-bottom: 0em;
+}
+
+ul {
+    padding-left: 0.5em;
+}
+
+#menu li {
+    color: black;
+    display: inline;
+    margin: 0.2em;
+    padding: 0.4em;
+    background: #d5f0f0;
+}
+
+#post-list {
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+}
+
+.hentry {
+    margin-top: 1.5em;
+}
+
+abbr {
+   border-width: 0;
+}
+
+.post-info {
+   font-size: 0.6em;
+}
+
+.entry-content {
+//  font-weight: 300;
+}
+
+.summary-content {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+#about {
+  font-size: 0.6em;
+  font-weight: 200;
+}
+
+pre {
+    margin: 2em 1em 2em 4em;
+}
+
+td
+{	   
+    padding: 0.3em;
+}
+
+.image-left {
+  float: left;
+}
+
+.social {
+  padding-left: 270px;
+}
+
+div[class='social'] ul {list-style: none; margin: 0; padding: 0;}
+div[class='social'] li {display: inline;}
+
+div[class='social'] a {
+	background-repeat: no-repeat;
+	background-position: 3px 6px;
+	padding-left: 25px;
+}
+
+.social a[type$='atom+xml'], .social a[type$='rss+xml'] {background-image: url('../images/icons/rss.png');}
+.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
+.social a[href*='email'] {background-image: url('../images/icons/email.png');}

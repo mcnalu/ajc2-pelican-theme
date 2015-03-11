@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+{% block content_title %}
+{% endblock %}
+
+<div class="social">
+	<ul>
+		<li><a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
+		{% if FEED_RSS %}
+		<li><a href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate">rss feed</a></li>
+		{% endif %}
+		<li><a href="http://twitter.com/mcnalu">@mcnalu</a></li>
+		<li><a href="{{ SITEURL }}/pages/email-signup.html">email</a></li>
+	</ul>
+</div>
+
+{% for article in articles_page.object_list %}
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                <footer class="post-info">
+                    <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+                </footer><!-- /.post-info -->
+                <div class="summary-content"> {{ article.summary|striptags }} </div><!-- /.entry-content -->
+        </article>
+{% endfor %}
+{% include 'pagination.html' %}
+</section><!-- /#content -->
+{% endblock content %}
